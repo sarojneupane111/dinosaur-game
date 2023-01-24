@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game{
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 3rem auto;
+}
+
+#block{
+    height: 50px;
+    width: 35px;
+    background-color: rgb(5, 5, 5);
+    position: relative;
+    top: 250px; 
+    left: 565px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+#block2{
+    height: 50px;
+    width: 35px;
+
+    background-color: rgb(5, 5, 5);
+    position: relative;
+    top: 250px; 
+    left: 600px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+#character{
+    height: 80px;
+    width: 40px;
+    position: relative;
+    top: 170px;
+    /* margin-bottom: 10px; */
+}
+#character img{
+   
+    height:73px;
+    width: 70px;
+    /* transform-origin: 50% 50%;
+    animation: jump .5s linear alternate infinite; */
+}
+@keyframes example {
+    0%{
+        left: 565px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+/* 
+@keyframes jump{
+    0%   {
+        transform: translate3d(0,0,0) scale3d(1,1,1);
+    }
+    40%  {
+        transform: translate3d(0,20%,0) scale3d(.8,1.4,1);
+    }
+     100%{
+        transform: translate3d(0,50%,0) scale3d(1.5,.7,1);
+    }
+  }
+   */
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin: 3rem auto;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+}
+#levels{
+    height: 200px;
+    width: 400px;
+    background-color: cornflowerblue;
+    margin: 3rem auto;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+
+}
+#levelup{
+     background-color:black;
+}
+#score{
+    font-size: 2.2rem;
+    color: brown;
+}
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#level {
+   
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 0;
+
+    /* background: red; */
+    /* -webkit-animation: fadeinout 3s linear forwards;
+    animation: fadeinout 3s linear forwards; */
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.level-animation{
+    -webkit-animation: fadeinout 2s linear;
+    animation: fadeinout 2s linear ;
+
+}
